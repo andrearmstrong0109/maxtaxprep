@@ -1,293 +1,249 @@
-<div class="nav">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maxx Tax Prep | Referral Partner Program</title>
+<meta name="description" content="Earn $50–$100 per completed tax return. Partner with Maxx Tax Prep.">
 
-  <div class="brand">
+<style>
+:root{
+--bg:#070707;
+--panel:#0e0e10;
+--gold:#d4af37;
+--gold-dark:#b9962e;
+--text:#f5f5f5;
+--muted:#b9b9b9;
+--radius:18px;
+--shadow:0 20px 60px rgba(0,0,0,.6);
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial;
+}
 
-    <div class="mark" aria-label="AndreMax logo"></div>
+*{box-sizing:border-box}
+body{
+margin:0;
+background:
+radial-gradient(800px 400px at 20% 10%, rgba(212,175,55,.12), transparent 60%),
+linear-gradient(180deg,#050505,#0b0b0b);
+color:var(--text);
+}
 
-    <div>
+a{text-decoration:none;color:inherit}
 
-      <h1>AndreMax Tax Prep</h1>
+.wrap{max-width:1100px;margin:0 auto;padding:30px 20px 70px}
 
-      <p>Luxury-level filing • Individuals & Self-Employed</p>
+/* HEADER */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
 
-    </div>
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+}
 
-  </div>
+.logo{
+width:52px;
+height:52px;
+border-radius:14px;
+border:1px solid rgba(212,175,55,.4);
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg, rgba(212,175,55,.25), rgba(212,175,55,.05));
+box-shadow:var(--shadow);
+font-weight:900;
+font-size:26px;
+color:var(--gold);
+}
 
+.brand h1{
+margin:0;
+font-size:15px;
+letter-spacing:.18em;
+text-transform:uppercase;
+}
 
+.brand p{
+margin:0;
+font-size:12px;
+color:var(--muted);
+}
 
-  <div class="navlinks">
+.btn{
+padding:14px 18px;
+border-radius:14px;
+border:1px solid rgba(212,175,55,.55);
+background:linear-gradient(135deg, rgba(212,175,55,.35), rgba(212,175,55,.08));
+color:#fff;
+font-weight:700;
+font-size:14px;
+cursor:pointer;
+}
 
-    <a href="#services">Services</a>
+.btn:hover{border-color:rgba(212,175,55,.9)}
 
-    <a href="#partners">Partner With Us</a>
+/* HERO */
+.hero{
+border-radius:var(--radius);
+border:1px solid rgba(212,175,55,.25);
+background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+box-shadow:var(--shadow);
+padding:48px 28px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:26px;
+}
 
-    <a href="#contact">Contact</a>
+.badge{
+display:inline-block;
+padding:8px 12px;
+border-radius:999px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.4);
+color:var(--gold);
+font-size:12px;
+letter-spacing:.1em;
+text-transform:uppercase;
+}
 
-  </div>
+.hero h2{
+font-size:44px;
+line-height:1.05;
+margin:16px 0 12px;
+}
 
+.hero p{
+color:var(--muted);
+font-size:16px;
+line-height:1.6;
+max-width:55ch;
+}
+
+.cta-row{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:22px;
+}
+
+.secondary{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.15);
+}
+
+/* CARD */
+.card{
+border-radius:16px;
+border:1px solid rgba(255,255,255,.12);
+background:rgba(0,0,0,.35);
+padding:22px;
+}
+
+.card h3{
+margin:0 0 10px;
+color:var(--gold);
+font-size:14px;
+letter-spacing:.15em;
+text-transform:uppercase;
+}
+
+.list{
+display:grid;
+gap:12px;
+margin-top:14px;
+}
+
+.li{
+display:flex;
+gap:10px;
+color:var(--muted);
+font-size:14px;
+line-height:1.5;
+}
+
+.dot{
+width:10px;
+height:10px;
+border-radius:3px;
+background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+margin-top:6px;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+font-size:12px;
+color:rgba(255,255,255,.45);
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:10px;
+}
+
+footer a{color:var(--gold)}
+
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.hero h2{font-size:34px}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="header">
+<div class="brand">
+<div class="logo">M</div>
+<div>
+<h1>Maxx Tax Prep</h1>
+<p>Referral Partner Program</p>
+</div>
+</div>
+<a href="partner.html" class="btn">Partner Request</a>
 </div>
 
-
-
-<section class="hero" id="top">
-
-  <div class="tag">• Tax Season Ready • Secure Intake • Partnerships Open</div>
-
-
-
-  <h2 class="title">Tax Prep that feels premium — and runs like a system.</h2>
-
-
-
-  <p class="subtitle">
-
-    AndreMax Tax Prep helps individuals and self-employed filers get accurate, compliant returns with a smooth,
-
-    secure intake process. We also work with creators and referral partners who want to offer a valuable resource
-
-    to their audience.
-
-  </p>
-
-
-
-  <div class="ctaRow">
-
-    <!-- Replace #lead with your intake form link if you have one -->
-
-    <a class="btn btnGold" href="#partners">Become a Partner</a>
-
-    <a class="btn" href="#services">See Services</a>
-
-  </div>
-
-
-
-  <p class="fine">
-
-    Partnerships are invite-based. We review requests and respond from
-
-    <strong>marketing@AndreMaxTaxPrep.com</strong>.
-
-  </p>
-
-
-
-  <div class="grid">
-
-    <div class="card">
-
-      <h3>What We Handle</h3>
-
-      <ul>
-
-        <li>Individual tax filing support</li>
-
-        <li>Self-employed / 1099 filing</li>
-
-        <li>Organized intake + document checklist</li>
-
-        <li>Clear next steps and follow-through</li>
-
-      </ul>
-
-      <div class="pillRow">
-
-        <span class="pill">Professional intake</span>
-
-        <span class="pill">Fast communication</span>
-
-        <span class="pill">Creator-friendly</span>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="card">
-
-      <h3>For Creators & Referrals</h3>
-
-      <ul>
-
-        <li>Simple partner onboarding</li>
-
-        <li>We handle the tax work + support</li>
-
-        <li>Referral payouts per completed return*</li>
-
-        <li>Best for: TikTok, IG, YouTube audiences</li>
-
-      </ul>
-
-      <p class="mini" style="margin:12px 0 0;">
-
-        *Partner terms are shared after approval.
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="section" id="services">
-
-  <h3 class="sectionTitle">Services</h3>
-
-  <p class="sectionNote">
-
-    We focus on clean, compliant tax filing for everyday people and self-employed earners.
-
-    If you’re a creator or business looking to refer your audience, skip down to the partner section.
-
-  </p>
-
-
-
-  <div class="grid">
-
-    <div class="card">
-
-      <h3>Individuals</h3>
-
-      <ul>
-
-        <li>W-2 tax filing</li>
-
-        <li>Dependents & credits</li>
-
-        <li>Simple investment items (basic)</li>
-
-        <li>Clear checklist and intake</li>
-
-      </ul>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Self-Employed</h3>
-
-      <ul>
-
-        <li>1099 income & expense tracking</li>
-
-        <li>Schedule C filing support</li>
-
-        <li>Deduction guidance (general)</li>
-
-        <li>Organized document requests</li>
-
-      </ul>
-
-      <p class="mini" style="margin:12px 0 0;">
-
-        Note: This website is informational and does not provide legal advice.
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="section" id="partners">
-
-  <h3 class="sectionTitle">Partner With Us</h3>
-
-  <p class="sectionNote">
-
-    If you have an audience and want to offer tax prep as a resource this season, request partnership access below.
-
-    We’ll review your info and follow up with next steps.
-
-  </p>
-
-
-
-  <div class="formBox">
-
-    <div class="card">
-
-      <h3>Referral Partner Request</h3>
-
-      <p class="mini" style="margin-top:0;">
-
-        Click below to submit your partnership request. Takes 30–60 seconds.
-
-      </p>
-
-
-
-      <!-- REPLACE THIS LINK with your Google Form -->
-
-      <a class="btn btnGold" style="margin-top:12px;" href="https://YOUR-GOOGLE-FORM-LINK-HERE" target="_blank" rel="noreferrer">
-
-        Open Partner Request Form →
-
-      </a>
-
-
-
-      <p class="mini" style="margin:12px 0 0;">
-
-        After you submit, watch for a response from <strong>marketing@AndreMaxTaxPrep.com</strong>.
-
-      </p>
-
-    </div>
-
-
-
-    <div class="card" id="contact">
-
-      <h3>Contact</h3>
-
-      <div class="contact">
-
-        <div><strong>Partnerships:</strong> marketing@AndreMaxTaxPrep.com</div>
-
-        <div><strong>Response time:</strong> 24–48 hours</div>
-
-        <div><strong>Best fit:</strong> creators, community leaders, referral partners</div>
-
-      </div>
-
-
-
-      <p class="mini" style="margin-top:12px;">
-
-        Keep it simple: send your handle + audience size + how you’d like to promote (story post, pinned video, link in bio, etc.).
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<div class="footer">
-
-  <div>© <span id="yr"></span> AndreMax Tax Prep. All rights reserved.</div>
-
-  <div>
-
-    <a href="#top">Back to top</a> ·
-
-    <a href="#partners">Partnerships</a>
-
-  </div>
-
+<section class="hero">
+<div>
+<span class="badge">Earn Per Return</span>
+<h2>Earn $50–$100 per completed tax return.</h2>
+<p>
+Partner with Maxx Tax Prep and earn by referring people who need professional tax filing.
+We handle everything — you just refer.
+</p>
+
+<div class="cta-row">
+<a href="partner.html" class="btn">Apply to Become a Partner</a>
+<a href="#how" class="btn secondary">How it Works</a>
 </div>
+</div>
+
+<div class="card" id="how">
+<h3>How It Works</h3>
+<div class="list">
+<div class="li"><span class="dot"></span>Apply using the partner request form.</div>
+<div class="li"><span class="dot"></span>Get approved and receive your referral code or link.</div>
+<div class="li"><span class="dot"></span>Refer people who need tax prep.</div>
+<div class="li"><span class="dot"></span>Get paid $50–$100 per completed return.</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div>© <span id="year"></span> Maxx Tax Prep</div>
+<div>
+<a href="partner.html">Partner Request</a>
+</div>
+</footer>
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
