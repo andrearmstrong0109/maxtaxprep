@@ -1,68 +1,153 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Partner Request | Max Tax Prep</title>
+<meta name="description" content="Partner request form for creators and referral partners." />
 
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Partner Request — Maxx Tax Prep</title>
-
-  <style>
-
-    body{margin:0;background:#070707;color:#f4f4f4;font-family:system-ui,Segoe UI,Roboto}
-
-    a{color:#d4af37;text-decoration:none}
-
-    .wrap{max-width:1050px;margin:0 auto;padding:26px 18px 60px}
-
-    .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-
-    .btn{padding:10px 12px;border-radius:14px;border:1px solid rgba(212,175,55,.55);background:rgba(212,175,55,.10);color:#fff;font-weight:700;font-size:13px}
-
-    .card{border-radius:18px;border:1px solid rgba(212,175,55,.20);background:rgba(255,255,255,.02);padding:18px}
-
-    h1{margin:0 0 8px;font-size:28px}
-
-    p{margin:0 0 14px;color:rgba(244,244,244,.70);line-height:1.65}
-
-    iframe{width:100%;height:980px;border:1px solid rgba(255,255,255,.10);border-radius:16px;background:#000}
-
-  </style>
-
+<style>
+:root { color-scheme: dark; }
+body{
+margin:0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+background:#0b0b0f;
+color:#fff;
+}
+header{
+padding:22px 16px;
+border-bottom:1px solid rgba(255,255,255,.08);
+background:rgba(0,0,0,.35);
+position:sticky; top:0;
+backdrop-filter: blur(10px);
+}
+.wrap{ max-width: 1050px; margin: 0 auto; padding: 0 16px; }
+.brand{
+display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+.brand h1{
+margin:0;
+font-size:16px;
+letter-spacing:.12em;
+text-transform:uppercase;
+opacity:.9;
+}
+.brand a{
+color:#d6b15a;
+text-decoration:none;
+font-weight:600;
+font-size:14px;
+}
+main{ padding: 22px 0 40px; }
+.card{
+background: rgba(255,255,255,.04);
+border: 1px solid rgba(255,255,255,.10);
+border-radius: 14px;
+overflow:hidden;
+box-shadow: 0 16px 60px rgba(0,0,0,.45);
+}
+.cardTop{
+padding: 16px;
+border-bottom: 1px solid rgba(255,255,255,.10);
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
+gap: 12px;
+flex-wrap: wrap;
+}
+.title{
+margin:0;
+font-size:18px;
+font-weight:700;
+}
+.sub{
+margin:6px 0 0;
+opacity:.8;
+font-size:14px;
+line-height:1.4;
+}
+.btns{ display:flex; gap:10px; flex-wrap:wrap; }
+.btn{
+border:1px solid rgba(214,177,90,.6);
+background: rgba(214,177,90,.10);
+color:#fff;
+padding:10px 12px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+font-size:14px;
+display:inline-flex;
+align-items:center;
+gap:8px;
+}
+.btn.secondary{
+border-color: rgba(255,255,255,.18);
+background: rgba(255,255,255,.06);
+font-weight:600;
+}
+.frameWrap{
+width:100%;
+height: 85vh;
+min-height: 650px;
+background: #0b0b0f;
+}
+iframe{
+width:100%;
+height:100%;
+border:0;
+display:block;
+}
+footer{
+margin-top:16px;
+opacity:.7;
+font-size:12px;
+line-height:1.4;
+}
+code{ background: rgba(255,255,255,.06); padding: 2px 6px; border-radius:6px; }
+</style>
 </head>
 
 <body>
+<header>
+<div class="wrap brand">
+<h1>Max Tax Prep</h1>
+<a href="index.html">← Back to site</a>
+</div>
+</header>
 
-  <div class="wrap">
+<main class="wrap">
+<section class="card">
+<div class="cardTop">
+<div>
+<p class="title">Partner Request Form</p>
+<p class="sub">
+Fill this out and we’ll send your referral code/link after approval.
+(If the embed doesn’t load, use the open button.)
+</p>
+</div>
 
-    <div class="top">
+<div class="btns">
+<!-- Replace the URL below with YOUR real JotForm link -->
+<a class="btn" href="https://form.jotform.com/YOUR_FORM_ID" target="_blank" rel="noopener">
+Open Form ↗
+</a>
+<a class="btn secondary" href="index.html">Home</a>
+</div>
+</div>
 
-      <a href="index.html">← Back</a>
+<div class="frameWrap">
+<!-- Replace the URL below with YOUR real JotForm link -->
+<iframe
+src="https://form.jotform.com/YOUR_FORM_ID"
+title="Partner Request Form">
+</iframe>
+</div>
+</section>
 
-      <a class="btn" href="index.html">Home</a>
-
-    </div>
-
-
-
-    <div class="card">
-
-      <h1>Partner Request</h1>
-
-      <p>Apply to become a Maxx Tax Prep referral partner.</p>
-
-
-
-      <iframe src="https://form.jotform.com/253625266841057"></iframe>
-
-    </div>
-
-  </div>
-
+<footer>
+Tip: If you ever rename this file, update the button on <code>index.html</code> to match.
+</footer>
+</main>
 </body>
-
 </html>
 
